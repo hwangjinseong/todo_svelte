@@ -3,11 +3,10 @@
   import type { Task } from "../model";
 
   export let data: Task;
-
 </script>
 <div>
     <span>{data.title}</span>
-    <TodoItemActionButton />
+    <TodoItemActionButton on:delete/>
 </div>
 
 <style>
