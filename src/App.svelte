@@ -1,11 +1,12 @@
 <script lang="ts">
-  
+  import TodoItemInput from "./components/TodoItemInput.svelte";
+  import TodoItems from "./components/TodoItems.svelte";
 </script>
 
-<main>
+<div>
+  <h1>TodoList</h1>
   
-</main>
-
-<style>
+  <TodoItemInput/>
   
-</style>
+  <TodoItems/>
+</div>
