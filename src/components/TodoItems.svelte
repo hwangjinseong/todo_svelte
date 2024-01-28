@@ -2,23 +2,7 @@
   import TodoItem from "./TodoItem.svelte"; 
   import type { Task } from "../model";
 
-  let items: Task[] = [
-    {
-        id: "1",
-        title: "할일1",
-        completed: false
-    },
-    {
-        id: "2",
-        title: "할일2",
-        completed: false
-    },
-    {
-        id: "3",
-        title: "할일3",
-        completed: false
-    }
-  ]
+  export let items: Task[]
 
   function onDelete(task: Task) {
     items = items.filter((item: Task) => item.id != task.id)

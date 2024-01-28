@@ -4,6 +4,7 @@
 
   export let data: Task;
 </script>
+
 <div>
     <span>{data.title}</span>
     <TodoItemActionButton on:delete/>
