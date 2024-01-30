@@ -1,1 +1,0 @@
-<input type='text' placeholder="입력해 주세요."/> 

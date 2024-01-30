@@ -1,6 +1,6 @@
 <script lang="ts">
+  import type { Task } from "../../model";
   import TodoItem from "./TodoItem.svelte"; 
-  import type { Task } from "../model";
 
   export let items: Task[]
 

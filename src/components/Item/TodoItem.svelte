@@ -1,12 +1,12 @@
 <script lang="ts">
+  import type { Task } from "../../model";
   import TodoItemActionButton from "./TodoItemActionButton.svelte";
-  import type { Task } from "../model";
 
   export let data: Task;
 </script>
 
 <div>
-    <span>{data.title}</span>
+    <span spellcheck="false" contenteditable="true" bind:textContent={data.title}>{data.title}</span>
     <TodoItemActionButton on:delete/>
 </div>
 
