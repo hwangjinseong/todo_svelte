@@ -6,8 +6,8 @@
 </script>
 
 <div>
-    <span spellcheck="false" contenteditable="true" bind:textContent={data.title}>{data.title}</span>
-    <TodoItemActionButton on:delete/>
+    <span spellcheck="false" contenteditable="true" bind:textContent={data.title}></span>
+    <TodoItemActionButton on:delete on:edit/>
 </div>
 
 <style>

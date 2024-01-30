@@ -3,13 +3,18 @@
 
     const dispatch = createEventDispatcher()
 
+    function onEdit() {
+        dispatch('edit')
+
+    }
+
     function onDelete() {
         dispatch('delete')
     }
 </script>
 
 <div>
-    <button>수정</button>
+    <button on:click={onEdit}>수정</button>
     <button on:click={onDelete}>삭제</button>
 </div>
 
